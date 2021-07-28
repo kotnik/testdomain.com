@@ -12,8 +12,7 @@ D("testdomain.com", REG_CHANGEME,
         //NAMESERVER('ns-239.awsdns-29.com.')
 )
 
-❯ aws route53 change-resource-record-sets --hosted-zone-id Z01051993MXQIIBA5LIGH --change-batch file://dns-entrie
-s.json
+❯ aws route53 change-resource-record-sets --hosted-zone-id Z01051993MXQIIBA5LIGH --change-batch file://dns-entries.json
 {
     "ChangeInfo": {
         "Id": "/change/C01439381P3QHUM9IV55I",
