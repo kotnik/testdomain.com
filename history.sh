@@ -38,10 +38,8 @@ D("testdomain.com", REG_CHANGEME,
 
 ❯ docker run --rm -it -v $(pwd)/dnsconfig.js:/dns/dnsconfig.js -v $(pwd)/creds.json:/dns/creds.json -e AWS_ACCESS_KEY_ID="$AWS_ACCESSKEY_ID" -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" stackexchange/dnscontrol dnscontrol preview
 2021/07/28 13:53:10 printIR.go:88: 2 Validation errors:
-2021/07/28 13:53:10 printIR.go:94: ERROR: in CNAME cname-nodot.testdomain.com: target (some-site.com) must end wi
-th a (.) [https://stackexchange.github.io/dnscontrol/why-the-dot]
-2021/07/28 13:53:10 printIR.go:94: ERROR: in NS ns-nodot.testdomain.com: target (some-other-site.com) must end wi
-th a (.) [https://stackexchange.github.io/dnscontrol/why-the-dot]
+2021/07/28 13:53:10 printIR.go:94: ERROR: in CNAME cname-nodot.testdomain.com: target (some-site.com) must end with a (.) [https://stackexchange.github.io/dnscontrol/why-the-dot]
+2021/07/28 13:53:10 printIR.go:94: ERROR: in NS ns-nodot.testdomain.com: target (some-other-site.com) must end with a (.) [https://stackexchange.github.io/dnscontrol/why-the-dot]
 exiting due to validation errors
 
 ❯ docker run --rm -it -v $(pwd)/dnsconfig.js:/dns/dnsconfig.js -v $(pwd)/creds.json:/dns/creds.json -e AWS_ACCESS_KEY_ID="$AWS_ACCESSKEY_ID" -e AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY" stackexchange/dnscontrol dnscontrol preview
