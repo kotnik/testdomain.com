@@ -1,0 +1,44 @@
+{
+    "Comment": "CREATE/DELETE/UPSERT a record ",
+    "Changes": [
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": {
+                "Name": "a.testdomain.com",
+                "Type": "A",
+                "TTL": 300,
+                "ResourceRecords": [
+                    { 
+                        "Value": "4.4.4.4"
+                    }
+                ]
+            } 
+        },
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": {
+                "Name": "cname-nodot.testdomain.com",
+                "Type": "CNAME",
+                "TTL": 300,
+                "ResourceRecords": [
+                    { 
+                        "Value": "some-site.com"
+                    }
+                ]
+            } 
+        },
+        {
+            "Action": "CREATE",
+            "ResourceRecordSet": {
+                "Name": "ns-nodot.testdomain.com",
+                "Type": "NS",
+                "TTL": 300,
+                "ResourceRecords": [
+                    { 
+                        "Value": "some-other-site.com"
+                    }
+                ]
+            } 
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+  "awsr53": {
+    "KeyId": "$AWS_ACCESS_KEY_ID",
+    "SecretKey": "$AWS_SECRET_ACCESS_KEY"
+  }
+}
